@@ -1,0 +1,900 @@
+/*
+    * Theme: R7X Port
+    * Date: 14/12/2020
+    * Main Theme 
+    * Dark Main Color : #202072
+    * Light Main Color : #373592
+    * Text Hold Color: #859aab
+*/
+/*Reset All Default Parameter*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Karla Regular', sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    font-family: 'Rubik Bold', sans-serif;
+}
+
+h2, h3{
+    font-family: 'Rubik Medium', sans-serif;
+    text-transform: capitalize;
+    
+}
+
+/*Start Glabal Clases*/
+.container {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 113% 'Karla Regular', sans-serif;
+    text-align: center;
+    height: 55px; 
+    line-height: 55px; /*equal height*/
+}
+
+.default__button {
+    background-color: #202072;
+    color: #fff;
+    /*Default Width*/
+    width: 170px;
+}
+
+.sub__button {
+    border: 1.8px solid #000;
+    border-radius: 35px;
+    /*Default Width*/
+    width: 165px;
+    color: #000;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.signboard {
+    font-family: 'Karla Regular', sans-serif;
+    color: #202072;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.h2insection {
+    font-size: 300%;
+    margin-bottom: 25px;
+    color: #202072;
+}
+/*End Glabal Clases*/
+
+/*//Start Header//*/
+.main__header {
+    background-color: #202072;
+}
+.header__container {
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.main__header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-logo {}
+.navigation {}
+
+.navigation-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.navigation-list li {
+    padding: 0 10px;
+}
+
+/*//End Header//*/
+
+
+/*//Start About Section//*/
+
+.about__section {
+    background-color: #202072;
+    color: #fff;
+}
+.about__container {
+    padding: 120px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    
+    background: url('../vendors/images/front-end-banner.png') no-repeat right bottom;
+    background-size: contain;
+    
+}
+.about__text {
+    width: 50%;
+}
+
+.about__text span {
+    font: 105% 'Karla Bold';
+    display: block;
+    margin-bottom: 23px;
+}
+
+.about__text h2 {
+    font-size: 550%;
+    margin-bottom: 5px;
+}
+
+.about__text h3 {
+    font: 265% 'Rubik Regular';
+    margin-bottom: 21px;
+}
+
+
+.about__text h4 {
+    font: 150% 'Rubik Medium';
+    margin-bottom: 50px;
+}
+
+.about__button {
+    border: 1.9px solid #fff;
+    width: 170px;
+    height: 50px;
+    line-height: 43px;
+    position: relative;
+    color: #fff;
+}
+
+.about__button::after {
+    content: '';
+    line-height: 15px;
+    display: block;
+    width: 167px;
+    height: 47px;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    border: 1.9px solid #fff;
+    
+}
+
+
+.about__image {
+    width: 50%; 
+}
+
+/*//End About Section//*/
+
+
+/*//Start Definition Section//*/
+
+.definition__container {
+    padding: 120px 0;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.definition__talk {
+    /*background-color: #333; /*wbr*/
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 315px;
+    
+}
+.definition__talk p {
+    font-family: 'Karla Regular', sans-serif;
+    color: #859aab;
+    width: 80%;
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+.talk__buttons {
+
+}
+
+.def__bu__default {
+    margin-right: 15px;
+}
+
+.def__bu__sub {
+    
+}
+
+/*********************/
+
+.definition__show {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    max-height: 350px;
+    flex-flow: row nowrap;
+    align-items: center;
+    background: radial-gradient(circle at 10% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #373592 50%, #373592 100%);
+}
+
+
+.show__picture {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    
+}
+
+.show__social {
+    list-style-type: none;
+    padding: 0 30px;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.show__social li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.show__social li a .fab {
+    font-size: 105%;
+    opacity: 0.5;
+
+}
+
+/*//Start Skills Section//*/
+.skills__section {
+    
+}
+
+.skills__container {
+    padding: 0 0 120px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video__skills {
+    width: 49%;
+    min-height: 600px;
+    background-color: #333; /*wbr*/
+}
+
+/*************************/
+
+.progress__skills {
+    width: 49%;
+    color: #849eb2;
+    font-size: 105%;
+    font-family: 'Rubik Medium', sans-serif;
+}
+
+.progress__skills div:nth-child(n+5)
+{
+    opacity: .5;
+}
+
+.skill-name {
+    float: left;
+    
+}
+
+.skill-percent {
+    float: right;
+}
+
+.skill-progress {
+    width: 100%;
+    height: 23px;
+    margin-bottom: 25px;
+}
+
+/*------------------------=> Alert: Remove margin bottom from last child*/
+
+/*//End Skills Section//*/
+
+/*//Start Services Section//*/
+
+.services__section {
+    background-color: #fcfbfc;
+}
+
+.services__container {
+    padding: 120px 0;   
+    text-align:center;
+}
+
+.services__board {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.service__carte {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;;
+    padding: 40px 15px;
+    background-color: #fff;
+    box-shadow: -1px 1px 5.9px -5px #000;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.service__carte i {
+    font-size: 400%;
+    margin-right: 15px;
+    color: #373592;
+    background-color: #fbfbfd;
+    padding: 19px;
+    border-radius: 50%;
+    
+}
+
+.service__carte h3 {
+    font-size: 130%;
+    text-transform: uppercase;
+    color: #202072;
+    min-width: 259px;
+    
+}
+
+.service__carte p {
+    padding-top: 7px;
+    margin-top: 15px;
+    border-top: 1px solid rgba(51, 51, 51, 0.08);
+    color: #859aab;
+    font: 102% 'Rubik Regular', sans-serif;
+    width: 75%;
+    letter-spacing: .2mm;
+    border-radius: 25px;
+}
+
+/*//End Services Section//*/
+
+/*//Start Portfolio Section//*/
+.portfolio__section{
+    
+}
+
+.portfolio__container {
+    padding: 120px 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.worksdone__categorynav {
+    display: flex;
+    flex-flow: row nowrap;
+    
+    list-style-type: none;
+    width: 35%;
+    
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.worksdone__categorynav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #859aab;
+    font-family: 'Karla Medium', sans-serif;
+}
+
+/*Default list item select*/
+.worksdone__categorynav li:first-child a {
+    color: #202072;
+}
+.worksdone__galory {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 23px;
+
+}
+
+.worksdone__figure {
+    background-color: #000;
+    position:relative;
+    cursor: pointer;
+}
+
+.worksdone__figure img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.worksdone__figure figcaption{
+    visibility: hidden;
+    transform: translateX(-10px);
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    color: #fff;
+}
+
+.worksdone__figure figcaption::before {
+    content: '';
+    background-color: #373592;
+    display: block;
+    width: 7px;
+    height: 50px;
+    position: absolute;
+    left: -10px;
+}
+
+.worksdone__figure figcaption h2 {
+    font: 160% 'Rubik Medium', sans-serif;
+    margin-bottom: 1%;
+    
+}
+
+.worksdone__figure figcaption span {
+    font: 105% 'Karla Medium', sans-serif;
+}
+
+/*End Portfolio Section//*/
+
+/*//Start Testimonial Section//*/
+.testimonial__section {
+    background-color: #fcfbfc;
+}
+
+.testimonial__container {
+    padding: 120px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+.testimonial__quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 25px 0; 
+    
+}
+
+.testimonial__quote blockquote {
+    
+}
+.testimonial__quote blockquote p::before {
+    content: "\f10d";
+    color: #202072;
+    font: 109% 'FontAwesome';
+    position: absolute;
+    top: 0;
+    left: -2.5%;
+}
+.testimonial__quote blockquote p::after {
+    content: "\f10e";
+    color: #202072;
+    font: 109% 'FontAwesome';
+    position: absolute;
+    bottom: 0;
+    right: -2.5%;
+}
+
+.testimonial__quote blockquote p {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    color: #849eb2;
+    
+    position: relative;
+}
+
+.quote__client {
+    margin-top:25px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.quote__client img {
+    border-radius: 25px;
+    margin-right: 10px;
+    width: 36%;
+    cursor: pointer;
+}
+
+.client__descrip {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 85px;
+}
+
+.client__descrip h3 {
+    font: 130% 'Rubik Medium', sans-serif;
+    color: #202072;
+}
+
+.client__descrip span{
+    font: 130% 'Karla Medium', sans-serif;
+    color: #849eb2;
+}
+
+.client_reviewstars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    
+}
+.client_reviewstars i{
+    
+    color: #faa733;
+    font-size: 120%;
+}
+
+.testimonial__slider span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #202072;
+}
+
+.testimonial__slider span:nth-of-type(2) {
+    background-color: #202072;
+    margin: 0 10px;
+}
+
+
+/*//End Testimonial Section//*/
+
+/*//Start Pricing Plans Section//*/
+
+.pricingplans__container {
+    padding: 120px 0;
+}
+
+.title__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.pricingtable__plans {
+    padding: 35px 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.box h3{
+    font: 157% 'Rubik Medium', sans-serif;
+    color: #202072;
+}
+
+.features__plan {
+    list-style-type: none;
+    font: 101% 'Karla Bold', sans-serif;
+    color: #849eb2;
+}
+
+.features__plan li:not(:last-of-type){
+    margin-bottom: 25px;
+    
+}
+
+.price__plan {
+    margin: 20px 0 60px 0;
+    color: #373592;
+    width: 133px;
+    height: 133px;
+    line-height: 165px;
+    background-color: #f2f1f7;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.price__plan .dollar {
+    font: 120% 'Rubik Medium', sans-serif;
+    vertical-align: 23px;
+}
+
+.price__plan .bucks {
+    font: 300% 'Rubik Bold', sans-serif;
+    
+}
+
+.price__plan .cents {
+    font: 100% 'Rubik Regular', sans-serif;
+}
+
+.buttons__plan {
+    margin: 50px 0 0;
+    width: 205px;
+}
+
+.buttons__plan i {
+    margin-right: 10px;
+}
+
+.basic__plan {
+    width: 31%;    
+}
+/*//End Pricing Plans Section//*/
+
+
+/*//Start Freelancer Section//*/
+.freelancer__section {
+    background-color: #202072;
+    
+}
+
+.freelancer__container {
+    padding: 120px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.freelancer__image {
+    width: 150px;
+    height: 150px;
+    margin-right: 40px;
+    position: relative;
+    background: #ddd;
+    border-radius:100%;
+    padding: 2px;
+}
+
+.freelancer__image img {
+    width: 100%;
+    height: 100%;
+    border-radius:100%;
+}
+
+.freelancer__image::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 12px;
+    right: 13px;
+    border: 1px solid #000;
+}
+
+.freelancer__container p {
+    font: 250% 'Rubik Regular', sans-serif;
+    color: #fff;
+}
+
+.freelancer__container p a{
+    color:  #fff;
+}
+
+/*//End Freelancer Section//*/
+
+
+/*//Start Blog Section//*/
+
+.blog__container {
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.extract__container {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between
+}
+
+.post__extract {
+    width: 32%;
+}
+
+.thumline__post{
+    width: 100%;
+    height: 250px;
+    background-color: #dddddd;
+}
+
+.thumline__post img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    
+}
+
+.detail__post {
+    padding: 25px 15px;
+    background-color: #fcfbfc;
+    width: 100%;
+}
+
+.detail__post footer{
+    font: 95% 'Karla Regular', sans-serif;
+    color: #849eb2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.detail__post footer span i {
+    color: #353392;
+    margin-right: 5.5px;
+}
+
+.title__post {
+    font: 190% 'Rubik Medium', sans-serif;
+    color: #1a105f;
+    margin: 25px 0;
+}
+
+/*//End Blog Section//*/
+
+
+/*//Start Contact Section//*/
+
+.contact__section {
+    background-color: #fcfbfc;
+}
+
+.contact__container {
+    padding: 120px 0;
+}
+
+.contact__options {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.contact__form {
+    
+    background-color: #353392;
+    width: 50%;
+    padding: 20px;
+    
+}
+
+.contact__form form input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 15px 5px;
+    font: 100% 'Rubik Regular', sans-serif;
+}
+
+.contact__form form input:focus,
+.contact__form form textarea:focus {
+    outline: none;
+}
+
+.contact__form form textarea{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 25px;
+    padding: 10px 9px;
+    font: 115% 'Karla Regular', sans-serif;
+    resize: none
+}
+
+/*///////////////\\\\\\\\\\\\*/
+
+.details {
+    width: 50%;
+    background-color: #fff;
+    padding: 50px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 104%;
+}
+
+.details h3 {
+    color: #443c7c;
+    font-size: 200%;
+    
+}
+
+.details p,
+.details div{
+    color: #849eb2;
+}
+
+.details div strong {
+    color: #000;
+    font-size: 110%;
+    user-select: none;
+}
+
+.details .socials  {
+
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 53%;
+}
+
+.details .socials li a{
+    display: block; 
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    
+    box-shadow: .1px .1px 1px #859eb1,
+                -.1px -.1px 1px  #859eb1;
+}
+
+.details .socials li a i {
+    color: #859eb1;
+}
+
+/*//End Contact Section//*/
+
+
+/*//Start Main Footer Section//*/
+
+.footer {
+    background-color: #353392;
+}
+
+.footer__container {
+    padding: 45px 0;
+    font: 125% 'Rubik Regular', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+/*//End Main Footer Section//*/
+

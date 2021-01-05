@@ -1,0 +1,41 @@
+
+/*Main Font Katira*/
+@font-face {
+    font-family: 'Karla Regular';
+    font-weight: normal;
+    src: url('../vendors/fonts/Karla/static/Karla-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Karla Medium';
+    font-weight: medium;
+    src: url('../vendors/fonts/Karla/static/Karla-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Karla Bold';
+    font-weight: bold;
+    src: url('../vendors/fonts/Karla/static/Karla-Bold.ttf');
+}
+
+
+/*Secondary Font Katira*/
+@font-face {
+    font-family: 'Rubik Regular';
+    font-weight: normal;
+    src: url('../vendors/fonts/Rubik/static/Rubik-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik Medium';
+    font-weight: medium;
+    src: url('../vendors/fonts/Rubik/static/Rubik-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik Bold';
+    font-weight: bold;
+    src: url('../vendors/fonts/Rubik/static/Rubik-Bold.ttf');
+}
+
+

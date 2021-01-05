@@ -1,0 +1,47 @@
+/*Anmation & Hover*/
+
+/*About Button Animation Border*/
+.about__button:hover {
+}
+
+/*About Section Social Icon Hover | start*/
+.show__social li a .fab {
+    transition: opacity 100ms ease-in;/*transition hover animation*/
+}
+
+.show__social li a .fab:hover {
+    opacity: 1;
+}
+
+/*About Section Social Icon Hover | end*/
+
+/*Works Done List Navigation Item Hover | start*/
+
+.worksdone__categorynav li a {
+    transition: color 300ms ease-in;/*transition hover animation*/
+}
+
+.worksdone__categorynav li a:hover{
+    color: #202072;
+}
+
+/*Works Done List Navigation Item Hover | end*/
+
+/*Works Done Figure Hover | start*/
+.worksdone__figure img {
+    transition: opacity 56ms ease-in;
+}
+
+.worksdone__figure figcaption {
+    transition: transform .3s ease-in;
+}
+
+.worksdone__figure:hover figcaption{
+    visibility: visible;
+    transform: translateX(0);
+
+}
+.worksdone__figure:hover img {
+    opacity: .5;   
+}
+/*Works Done Figure Hover | end*/
