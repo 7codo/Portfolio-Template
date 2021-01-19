@@ -1,0 +1,376 @@
+/*Responsive for all devices*/
+
+/*4K*/
+@media (min-width: 2560px) {
+    body {
+        font-size: 25px;
+    }
+    
+    .button {
+        width: 300px !important;
+        height: 65px !important;
+        line-height: 65px; 
+    }
+
+    .about__button::after {
+        width: 295px !important;
+        height: 60px !important;
+    }
+    
+    /*Start Portfolio*/    
+    .worksdone__galory {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /*Price Plans*/
+    .buttons__plan {
+        width: 250px;
+
+    }
+    
+    /*Contact*/
+    .contact__form form input {
+        min-height: 85px;
+    }
+    
+    .details .socials {
+        width: 40%;
+    }
+    
+
+    .client__descrip {
+        width: 100%;
+    }
+}
+
+
+/*Extra large screen as TV*/
+/*XL*/
+@media (min-width: 1201px){
+    /*Extend the container*/
+    .container {
+        width: 75%;
+    }
+}
+
+
+/*Large screen as Desktop*/
+/*LS*/
+@media (max-width: 1200px){
+    /*Extend the container*/
+    .container {
+        width: 90%;
+    }
+    /*Start Portfolio*/
+    .worksdone__categorynav {
+        width: 60%;   
+    }
+}
+
+/*Smal screen as Laptop*/
+/*SS*/
+@media (max-width: 910px) {
+    .container {
+        width: 92%;
+    }
+    
+    /*Start About Section*/
+    .about__text {
+        width: 85%;
+        font-size: 15px;
+    }
+    
+    .about__container {
+        background-position: 150px bottom;
+        background-size: contain;
+    }
+    
+    .about__text span {
+        margin-bottom: 10px;
+    }
+    .about__text h3 {
+        font-size: 250%;
+    }
+    .about__text h4 {
+        margin-bottom: 40px;
+    }
+    
+    /*Start Definition */
+    
+    .definition__container {
+        padding: 80px 0;
+    }
+    
+    .definition__talk p  {
+        width: 95%
+    }
+    
+    .show__social {
+        padding: 0 20px;
+        margin-right: 25px;
+    }
+    
+    /*Start Skills*/
+    .skills__container {
+        padding: 90px 0;
+    }
+    
+    .video__skills {
+        min-height: 450px;
+    }
+    
+    .skill-progress {
+        height: 15px;
+    }
+    
+    /*Start Services*/
+    .services__container {
+        padding: 90px 0;
+    }
+    
+    /*Start Portfolio*/
+    .worksdone__categorynav {
+        width: 75%;   
+    }
+    
+    .worksdone__galory {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /*Start Testimonial*/
+    .testimonial__container {
+        padding: 90px 0;
+    }
+    .testimonial__quote blockquote p {
+        width: 90%
+    }
+    .quote__client {
+        font-size: 85%;
+    }
+    
+    /*Start Pricing Plans*/
+    .pricingplans__container {
+        padding: 90px 0;
+        font-size: 93%;
+    }
+    
+    .buttons__plan {
+        width: 190px;
+    }
+    
+    .pricingtable__plans {
+        padding: 0;
+    }
+    
+    /*Start Freelancer*/
+    .freelancer__container {
+        padding: 90px 0;
+    }
+    
+    .freelancer__image {
+        margin-right: 10px;
+    }
+    
+    .freelancer__container p {
+        font-size: 200%;
+    }
+    
+    /*Start Blog*/
+    .blog__container {
+        padding: 90px 0;
+    }
+    
+    .extract__container {
+        margin-top: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /*Start Contact*/
+    .contact__container {
+        padding: 90px 0;
+    }
+    
+    .contact__options {
+        flex-direction: column;
+    }
+    
+    .contact__form,
+    .details{
+        flex: 1;
+    }
+    
+    .details {
+        min-height: 480px;
+    }
+    
+    .details .socials  {
+        width: 40%;
+    }
+    
+    /*Start Main Footer*/ 
+    .footer__container {
+        padding: 35px 0;
+    }
+}
+
+@media (min-width: 769px){
+    /*Navigation list mini*/
+    .navigation-list {
+        display: block !important;
+    }
+
+    .list-open {
+        display: none !important;
+    }
+}
+/*IPads and Tablets*/
+/*ITS*/
+@media (max-width: 768px){
+
+    /*Navigation list mini*/
+    .navigation-list {
+        display: none !important;
+    }
+
+    .list-open {
+        display: block !important;
+    }
+    /*Start header*/
+    
+    /*Start About*/
+    .about__container {
+        background-size: 75% 95%;
+    }
+    
+    .about__container {
+        padding: 90px 0;
+    }
+    
+    /*Start Skills*/
+    .skills__container {
+        flex-direction: column;
+    }
+    
+    .video__skills {
+        width: 85%;
+        margin-bottom: 45px;
+    }
+    
+    .progress__skills {
+        width: 100%
+    }
+    
+    /*Start Services*/
+    .services__board {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    /*Start Portfolio*/
+    .worksdone__categorynav {
+        width: 95%;
+    }
+    .worksdone__galory {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    /*Start Pricing Plans*/
+    .pricingtable__plans {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    /*Freelancer*/
+    .freelancer__image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .freelancer__container p {
+        font-size: 150%;
+    }
+    
+    .freelancer__image::after {
+        right: 0;
+    }
+    /*Start Blog*/
+    .extract__container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 55px;
+    }
+    
+    .title__post {
+        font-size: 175%;
+    }
+    
+    .thumline__post {
+        height: 260px;
+    }
+    
+    /*Start Contact*/
+    
+    .details .socials {
+        width: 100%;
+    }
+    
+    /*Start Main Footer*/
+    .footer__container {
+        padding: 15px 0;
+        font-size: 90%;
+    }
+}
+
+
+
+/*Mobile devices*/
+/*MS*/
+@media (max-width: 480px) {
+    /*Start About*/
+    body {
+        font-size: 15px;
+    }
+    .about__container {
+        background-size: 65% 85%;
+    }
+    
+    .about__text {
+        font-size: 13px;
+        
+    }
+    
+    /**/
+    .definition__talk {
+        padding-left: 5px;
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    .def__bu__default{
+        margin-bottom: 10px;
+    }
+    
+    /**/
+    .worksdone__categorynav {
+        width: 100%;
+        font-size: 85%;
+    }
+    
+     /*Freelancer*/
+    .freelancer__image {
+        width: 85px;
+        height: 85px;
+    }
+    
+    .freelancer__container p {
+        font-size: 110%;
+    }
+    
+    .freelancer__image::after {
+        width: 10px;
+        height: 10px;
+        right: 0;
+    }
+}
+
+
+
