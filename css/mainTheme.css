@@ -100,13 +100,41 @@ h2, h3{
 .header-logo {}
 .navigation {}
 
+
 .navigation-list {
     list-style-type: none;
-    display: flex;
 }
 
 .navigation-list li {
     padding: 0 10px;
+    float: left;
+}
+
+/*Mini avigation list*/
+.list-open {
+    color: #fff;
+    font-size: 150%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navigation-list-mini {
+    display: none !important;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 10px;
+    
+}
+.navigation-list-mini li{
+    margin-top: 10px;
+}
+.navigation-list-mini li a:hover {
+    display: block;
+    padding: 6px 5px;
+    background-color: #373592;
+    color: #dfdfdf;    
 }
 
 /*//End Header//*/
@@ -176,10 +204,6 @@ h2, h3{
 }
 
 
-.about__image {
-    width: 50%; 
-}
-
 /*//End About Section//*/
 
 
@@ -188,29 +212,29 @@ h2, h3{
 .definition__container {
     padding: 120px 0;
     display:flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    flex-direction: row;
 }
 
 .definition__talk {
-    /*background-color: #333; /*wbr*/
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 315px;
-    
+    min-height: 250px;
+    padding-left: 5%
 }
+
 .definition__talk p {
     font-family: 'Karla Regular', sans-serif;
     color: #859aab;
     width: 80%;
     line-height: 2;
     margin-bottom: 25px;
+    width: 55%;
 }
 
 .talk__buttons {
-
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .def__bu__default {
@@ -222,35 +246,16 @@ h2, h3{
 }
 
 /*********************/
-
-.definition__show {
-    width: 40%;
-    display: flex;
-    justify-content: flex-end;
-    max-height: 350px;
-    flex-flow: row nowrap;
-    align-items: center;
-    background: radial-gradient(circle at 10% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #373592 50%, #373592 100%);
-}
-
-
-.show__picture {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    
-}
-
 .show__social {
     list-style-type: none;
-    padding: 0 30px;
-    height: 75%;
+    padding: 0 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
+    background: #373592;
+    min-height: 250px;
+
 }
 
 .show__social li a {
@@ -311,7 +316,6 @@ h2, h3{
     height: 23px;
     margin-bottom: 25px;
 }
-
 /*------------------------=> Alert: Remove margin bottom from last child*/
 
 /*//End Skills Section//*/
@@ -400,7 +404,7 @@ h2, h3{
     margin: 40px 0;
 }
 
-.worksdone__categorynav li a {
+.worksdone__categorynav li {
     text-decoration: none;
     text-transform: uppercase;
     color: #859aab;
@@ -408,7 +412,7 @@ h2, h3{
 }
 
 /*Default list item select*/
-.worksdone__categorynav li:first-child a {
+.worksdone__categorynav .isActive {
     color: #202072;
 }
 .worksdone__galory {
@@ -425,6 +429,20 @@ h2, h3{
     cursor: pointer;
 }
 
+.worksdone__figure .category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+    background-color: rgb(255, 0, 34);
+    color: #fff;
+    border-radius: 15px;
+    margin: 5px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
 .worksdone__figure img {
     width: 100%;
     height: 100%;
@@ -474,6 +492,10 @@ h2, h3{
     align-items: center;
 }
 
+.testiQuote__container {
+    display:flex;
+    flex-direction: row;
+}
 
 .testimonial__quote {
     display: flex;
@@ -487,19 +509,21 @@ h2, h3{
 .testimonial__quote blockquote {
     
 }
-.testimonial__quote blockquote p::before {
-    content: "\f10d";
+
+.testimonial__quote blockquote p::before,
+.testimonial__quote blockquote p::after {
     color: #202072;
     font: 109% 'FontAwesome';
     position: absolute;
+}
+
+.testimonial__quote blockquote p::before {
+    content: "\f10d";
     top: 0;
     left: -2.5%;
 }
 .testimonial__quote blockquote p::after {
     content: "\f10e";
-    color: #202072;
-    font: 109% 'FontAwesome';
-    position: absolute;
     bottom: 0;
     right: -2.5%;
 }
@@ -515,7 +539,7 @@ h2, h3{
 
 .quote__client {
     margin-top:25px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -568,13 +592,17 @@ h2, h3{
     background-color: #fff;
     border-radius: 50%;
     border: 1px solid #202072;
+    cursor: pointer;
 }
 
 .testimonial__slider span:nth-of-type(2) {
-    background-color: #202072;
+
     margin: 0 10px;
 }
 
+.slider_active {
+    background-color: #202072 !important;
+}
 
 /*//End Testimonial Section//*/
 
@@ -593,7 +621,7 @@ h2, h3{
 .pricingtable__plans {
     padding: 35px 15px;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-between;
     text-align: center;
 }
@@ -670,7 +698,7 @@ h2, h3{
 .freelancer__container {
     padding: 120px 0;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
 }
@@ -727,18 +755,19 @@ h2, h3{
 
 .extract__container {
     margin-top: 40px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between
+    display: grid;
+    grid-template-columns: repeat(
+        3, 1fr);
+    grid-gap: 5px;
 }
 
 .post__extract {
-    width: 32%;
+    
 }
 
-.thumline__post{
+.thumline__post {
     width: 100%;
-    height: 250px;
+    min-height: 250px;
     background-color: #dddddd;
 }
 
@@ -771,7 +800,7 @@ h2, h3{
 .title__post {
     font: 190% 'Rubik Medium', sans-serif;
     color: #1a105f;
-    margin: 25px 0;
+    margin: 45px 0;
 }
 
 /*//End Blog Section//*/
@@ -785,27 +814,27 @@ h2, h3{
 
 .contact__container {
     padding: 120px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center
 }
 
 .contact__options {
-    
     display: flex;
     flex-direction: row;
     justify-content: center;
     
 }
 
-.contact__form {
-    
+.contact__form {    
     background-color: #353392;
-    width: 50%;
+    flex: .5;
     padding: 20px;
-    
 }
 
 .contact__form form input {
     width: 100%;
-    height: 50px;
+    min-height: 50px;
     margin-bottom: 10px;
     padding: 15px 5px;
     font: 100% 'Rubik Regular', sans-serif;
@@ -828,7 +857,7 @@ h2, h3{
 /*///////////////\\\\\\\\\\\\*/
 
 .details {
-    width: 50%;
+    flex: .5;
     background-color: #fff;
     padding: 50px 25px;
     display: flex;
@@ -859,7 +888,7 @@ h2, h3{
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 53%;
 }
 
@@ -891,9 +920,14 @@ h2, h3{
 
 .footer__container {
     padding: 45px 0;
-    font: 125% 'Rubik Regular', sans-serif;
+    font: 115% 'Rubik Regular', sans-serif;
     text-align: center;
     color: #fff;
+}
+
+.footer__container a{
+    color: #fff;
+    font-weight: bold;
 }
 
 /*//End Main Footer Section//*/
