@@ -8,7 +8,10 @@
         <link rel="stylesheet" href="css/mainTheme.css">
         <link rel="stylesheet" href="css/loadFonts.css">
         <link rel="stylesheet" href="css/keepmoving.css">
+        <link rel="stylesheet" href="css/responsive.css" >
+        <link rel="stylesheet" href="css/othersides.css">
         <!-- Vendors Files -->
+        
     </head>
     <body>
         <!-- Header Start -->
@@ -21,23 +24,37 @@
                     R7X
                 </a>
                 
-                <!-- NAVIGATION LIST -->
+                <!-- NAVIGATION LIST Desktop-->
                 <nav class="navigation">
                     <ul class="navigation-list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Testimonial</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonial">Testimonial</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
+                    <!--Button to show/hide navigation-->
+                    <div class="list-open">
+                        <i class="fas fa-bars"></i>
+                    </div>
+
+                    </div>
                 </nav>
             </div>
             
-            <!-- header mobile container -->
-            <div class="header__container-mobile">
-            </div>
+            <!--  mobile & small screen navigation -->
+            <ul class="navigation-list-mini">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
         </header>
         <!-- Header End -->
         
@@ -47,36 +64,34 @@
                 <div class="about__text">
                     <span>Welcome to my website</span>
                     <h2>Hello!</h2>
-                    <h3>I am Ayoub Chehrouri</h3>
+                    <h3>In R7C Website</h3>
                     <h4>Front-End Developer</h4>
-                    <a href="#" class="button about__button">Download CV</a>
+                    <a href="#" id="js--dowcvbu" class="button about__button">Download CV</a>
                 </div>
-                <div class="about__image"></div>
+                
             </div>
         </section>
         <!-- Start Definition Section -->
-        <section class="definition__section">
+        <section id="about" class="definition__section">
             <div class="definition__container container">
+                <ul class="show__social">
+                            <li><a href="https://www.twitter.com/R7CAyoub" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.pinterest.com/R7CAyoub" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="https://www.facebook.com/R7CAyoub" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.youtube.com/R7CAyoub" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li><a  href="https://www.linkedin.com/R7CAyoub" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
                 <div class="definition__talk">
                     <span class="signboard">About me</span>
-                    <h2>Hello, I am Ayoub Chehrouri</h2>
+                    <h2>Hello, I am Ayoub</h2>
                     <p>I am passionate about my work. Because I love what I do,     When I make a front web page I feel myself as a builder         creating a palace that so many people will visit.
                         In every moment I push myself to learn new things and do a great work.</p>
                     <div class="talk__buttons">
-                        <a href="#" class="button default__button def__bu__default">Download Cv</a>
+                        <a href="#" id="js--dowcvbu_about" class="button default__button def__bu__default">Download Cv</a>
                         <a href="#" class="button sub__button def__bu__sub">Hire me</a>
                     </div>
                 </div>
-                <div class="definition__show">
-                    <img src="vendors/images/photo-profil.jpg" class="show__picture">
-                   <ul class="show__social">
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    </ul>
-                </div>
+            
             </div>
         </section>
         <!-- End Definition Section -->
@@ -149,7 +164,7 @@
         
         
         <!-- Start Services Section -->
-        <section class="services__section">
+        <section id="services" class="services__section">
             <div class="services__container container">
                 <span class="signboard">Services</span>
                 <h2 class="h2insection">What I do</h2>
@@ -183,104 +198,96 @@
         <!-- End Services Section -->
         
         <!-- Start Portfolio Section -->
-        <section class="portfolio__section">
+        <section id="portfolio" class="portfolio__section">
             <div class="portfolio__container container">
                 <span class="signboard">Portfolio</span>
                 <h2 class="h2insection">Works I have done</h2>
                 <ul class="worksdone__categorynav">
-                        <li><a href="#">All</a></li>
-                        <li><a href="#">Front-End</a></li>
-                        <li><a href="#">Back-End</a></li>
-                        <li><a href="#">Full Stack</a></li>
+                        <li class="isActive">All</li>
+                        <li>Front-End</li>
+                        <li>Back-End</li>
+                        <li>Full Stack</li>
                     </ul>
                     <div class="worksdone__galory">
-                        <figure class="worksdone__figure">
-                           <!-- 463px*463px -->
-                            <a href="https://github.com/R7XMonster/Boop-Template" target="_blank">
-                                <img src="vendors/images/worksdone-galory2.png" alt="Work Done 1">
-                                <figcaption>
-                                    <h2>Boop Template Project</h2>
-                                    <span>Boop Template created with HTML5 and CSS3.</span>
-                                </figcaption>
-                            </a>
-                        </figure>
+
                         
-                        <figure class="worksdone__figure">
-                            <!-- 463px*463px -->
-                            <img src="vendors/images/worksdone-galory1.png" alt="Work Done 1">
-                            <figcaption>
-                                <h2>First Image Title</h2>
-                                <span>Little Description</span>
-                            </figcaption>
-                        </figure>
-                        <figure class="worksdone__figure">
-                            <!-- 463px*463px -->
-                            <img src="vendors/images/worksdone-galory1.png" alt="Work Done 1">
-                            <figcaption>
-                                <h2>First Image Title</h2>
-                                <span>Little Description</span>
-                            </figcaption>
-                        </figure>
-                        
-                        <figure class="worksdone__figure">
-                            <!-- 463px*463px -->
-                            <img src="vendors/images/worksdone-galory1.png" alt="Work Done 1">
-                            <figcaption>
-                                <h2>First Image Title</h2>
-                                <span>Little Description</span>
-                            </figcaption>
-                        </figure>
-                        <figure class="worksdone__figure">
-                            <!-- 463px*463px -->
-                            <img src="vendors/images/worksdone-galory1.png" alt="Work Done 1">
-                            <figcaption>
-                                <h2>First Image Title</h2>
-                                <span>Little Description</span>
-                            </figcaption>
-                        </figure>
-                        <figure class="worksdone__figure">
-                            <!-- 463px*463px -->
-                            <img src="vendors/images/worksdone-galory1.png" alt="Work Done 1">
-                            <figcaption>
-                                <h2>First Image Title</h2>
-                                <span>Little Description</span>
-                            </figcaption>
-                        </figure>
                     </div>
             </div>
         </section>
         <!-- End Portfolio Section -->
         
         <!-- Start Testimonial Section -->
-        <section class="testimonial__section">
+        <section id="testimonial" class="testimonial__section">
             <div class="testimonial__container container">
                 <span class="signboard">Testimonial</span>
                 <h2 class="h2insection">What people say</h2>
-                
-                <figure class="testimonial__quote">
-                    <blockquote>
-                        <p>All he could think about was how it would all end. There was still a bit of uncertainty in the equation, but the basics were there for anyone to see. No matter how much he tried to see the positive, it wasn't anywhere to be seen. The end was coming and it wasn't going to be pretty.</p>
-                    </blockquote>
-                    <figcaption class="quote__client">
-                        <img src="vendors/images/clients/1.jpg" alt="Client Photo">
-                        <div class="client__descrip">
-                            <h3 class="client_name">Edwin Romero</h3>
-                            <span class="client_jobtitle">CEO of coloufly</span>
-                            <div class="client_reviewstars">
-                            <!-- 4 STARS AND HALF -->
+                <div class="testiQuote__container">
+                    <figure class="testimonial__quote">
+                        <blockquote>
+                            <p>Exercitation deserunt amet nulla do eiusmod. Non minim tempor dolor ipsum sunt incididunt laborum eu proident enim proident. Culpa cupidatat id et aliqua labore Lorem sint ut officia fugiat voluptate laborum. Ullamco ea duis deserunt velit culpa fugiat sint. Commodo esse proident eiusmod sunt.</p>
+                        </blockquote>
+                        <figcaption class="quote__client">
+                            <img src="vendors/images/clients/1.jpg" alt="Client Photo">
+                            <div class="client__descrip">
+                                <h3 class="client_name">Edwin Romero</h3>
+                                <span class="client_jobtitle">CEO of coloufly</span>
+                                <div class="client_reviewstars">
+                                <!-- 4 STARS AND HALF -->
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="testimonial__quote">
+                        <blockquote>
+                            <p>Exercitation deserunt amet nulla do eiusmod. Non minim tempor dolor ipsum sunt incididunt laborum eu proident enim proident. Culpa cupidatat id et aliqua labore Lorem sint ut officia fugiat voluptate laborum. Ullamco ea duis deserunt velit culpa fugiat sint. Commodo esse proident eiusmod sunt.</p>
+                        </blockquote>
+                        <figcaption class="quote__client">
+                            <img src="vendors/images/clients/2.jpg" alt="Client Photo">
+                            <div class="client__descrip">
+                                <h3 class="client_name">Terrence Oliver</h3>
+                                <span class="client_jobtitle">Librarian</span>
+                                <div class="client_reviewstars">
+                                <!-- 5 STARS -->
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
+                                </div>
                             </div>
-                        </div>
-                    </figcaption>
-                </figure>
-                
+                        </figcaption>
+                    </figure>
+
+                    <figure class="testimonial__quote">
+                        <blockquote>
+                            <p>Exercitation deserunt amet nulla do eiusmod. Non minim tempor dolor ipsum sunt incididunt laborum eu proident enim proident. Culpa cupidatat id et aliqua labore Lorem sint ut officia fugiat voluptate laborum. Ullamco ea duis deserunt velit culpa fugiat sint. Commodo esse proident eiusmod sunt.</p>
+                        </blockquote>
+                        <figcaption class="quote__client">
+                            <img src="vendors/images/clients/3.jpg" alt="Client Photo">
+                            <div class="client__descrip">
+                                <h3 class="client_name">Greg White</h3>
+                                <span class="client_jobtitle">Medical Assistant</span>
+                                <div class="client_reviewstars">
+                                <!-- 4 STARS -->
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <!-- Remove one star -->
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
                 <div class="testimonial__slider">
                     <span></span>
-                    <span></span>
+                    <span class="slider_active"></span>
                     <span></span>
                 </div>  
             </div>
@@ -356,7 +363,6 @@
         <!-- End Pricing Plans Section -->
         
         <!-- Start Pricing Plans Section -->
-        
         <section class="freelancer__section">
             <div class="freelancer__container container">
                 <div class="freelancer__image"><img src="vendors/images/photo-profil.jpg" alt="Photo Profile"></div>
@@ -369,7 +375,7 @@
         
         <!-- Start Blog Section -->
         
-        <section class="blog__section">
+        <section id="blog" class="blog__section">
             <div class="blog__container container">
                 <span class="signboard">Blog</span>
                 <h2 class="h2insection">Latest News</h2>
@@ -382,7 +388,7 @@
                         </div>
                         <div class="detail__post">
                             <footer>
-                                <span><i class="fas fa-user-edit"></i>Ayoub Chehrouri</span>
+                                <span><i class="fas fa-user-edit"></i>Ayoub</span>
                                 <span><i class="far fa-calendar-alt"></i>23rd Dec 2020</span>
                             </footer>
                             <h3 class="title__post">The most powerfull headphone.</h3>
@@ -399,7 +405,7 @@
                         </div>
                         <div class="detail__post">
                             <footer>
-                                <span><i class="fas fa-user-edit"></i>Ayoub Chehrouri</span>
+                                <span><i class="fas fa-user-edit"></i>Ayoub</span>
                                 <span><i class="far fa-calendar-alt"></i>23rd Dec 2020</span>
                             </footer>
                             <h3 class="title__post">The most powerfull headphone.</h3>
@@ -416,7 +422,7 @@
                         </div>
                         <div class="detail__post">
                             <footer>
-                                <span><i class="fas fa-user-edit"></i>Ayoub Chehrouri</span>
+                                <span><i class="fas fa-user-edit"></i>Ayoub</span>
                                 <span><i class="far fa-calendar-alt"></i>23rd Dec 2020</span>
                             </footer>
                             <h3 class="title__post">The most powerfull headphone.</h3>
@@ -434,7 +440,7 @@
         <!-- End Blog Section -->
         
         <!-- Start Contact Section -->
-        <section class="contact__section">
+        <section id="contact" class="contact__section">
             <div class="contact__container container">
                 <span class="signboard">Contact Me</span>
                 <h2 class="h2insection">Get In Touch</h2>
@@ -445,7 +451,7 @@
                             <input type="email" id="emailInput" placeholder="Type your email....">
                             <input type="number" id="numberInput" placeholder="Type your number....">
                             <textarea placeholder="Type your message..."></textarea>
-                            <a href="#" class="button about__button">Send Message</a>
+                            <a href="#" id="send_msg" class="button about__button contact__button">Send Message</a>
                         </form>
                     </div>
                     <div class="details">
@@ -475,12 +481,13 @@
         <!-- Start Main Footer Section -->
         <footer class="footer">
             <div class="footer__container container">
-                UI by Avita | Copyright &copy; 2020 R7X | All Rights Reserved
+                UI by Avita | Copyright &copy; 2020 <a href="https://github.com/R7CAyoub" target="_blank">R7C Ayoub</a> | All Rights Reserved
             </div>
         </footer>
         <!-- End Main Footer Section -->
         
         <!-- Scripts -->
+        <script src="js/manipulation.js"></script>
         <script src="https://kit.fontawesome.com/f70dbb024d.js" crossorigin="anonymous"></script>
     </body>
 </html>
